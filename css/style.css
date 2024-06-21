@@ -1,0 +1,52 @@
+/* Importar a donte Poppins (Google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Variaveis no CSS */
+:root{
+    --cor-01: #e0e1dd;
+    --cor-02: #778da9;
+    --cor-03: #415a77;
+    --cor-04: #1b263b;
+    --cor-05: #0d1b2a;
+    --cor-06: #fca311;
+}
+/* Reset: limpa as formatações padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*ajusta dentro da div evitando empurrar o elemento*/
+}
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: var(--cor-01);
+    color: var(--cor-05);
+}
+
+nav {
+    background-color: var(--cor-03);
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor-01);
+    padding: 0.5rem 1rem;
+    transition: 0.5s ease;
+    /* transition: 300m ease; */
+    /* border: solid 1px yellow; TESTE */
+}
+
+nav a:hover {
+    color: var(--cor-06);
+}
